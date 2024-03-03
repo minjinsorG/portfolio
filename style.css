@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+
+  }
+  
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  header ul.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #86BBD8;
+    position: fixed;
+    width: 100%;
+  }
+  header ul.nav-bar li {float: right;}
+  header ul.nav-bar li .nav-link {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  header ul.nav-bar li .nav-link:hover {background-color: #B6DCFE;}
+  header ul.nav-bar li.left{float: left;}
+  
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-page {
+    height: 100vh;
+    background-color: #CDEDFD;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .about-page .right-picture {float: right;}
+  .about-page .left-text {float: left;}
+  .about-page h1 {
+    color: #33658A;
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-size: 96px;
+    margin: 20vh 0 0 20vw;
+  }
+  .about-page p {
+    color: #33658A;
+    font-family: "Arial, Helvetica, sans-serif";
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 40px 20vw;
+    padding-top: 20px;
+  }
+  .about-page img {
+    width: 20vw;
+    height: 20vw;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    margin: 25vh 20vw 25vh 0;
+  }
+  .about-page .button {
+    background-color: #33658A;
+    border: 3px solid #462C95;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 0 20vw;
+    border-radius: 35px;
+    padding: 15px 20px;
+  }
+  .about-page .button:hover {
+    background-color: #86BBD8;
+    border: 3px solid #462C95;
+  }
+  
+  @media screen and (max-width: 1120px) {
+    .about-page h1 {
+      font-size: 78px;
+      margin: 15vh 0 0 10vw;
+    }
+    .about-page p {
+      font-size: 18px;
+      margin: 0 0 40px 10vw;;
+    }
+    .about-page .button {
+      font-size: 18px;
+      margin: 0 0 0 10vw;
+    }
+    .about-page img {
+      margin: 25vh 10vw 25vh 0;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    header ul.nav-bar li.left, header ul.nav-bar li {float: none;}
+    
+    .about-page {height: 850px;}
+    .about-page .right-picture, .about-page .left-text {float: none;}
+    .about-page img {margin: 250px 30vw 20px 30vw;}
+    .about-page h1 {margin: 10px 0 0 10vw;}
+  }
